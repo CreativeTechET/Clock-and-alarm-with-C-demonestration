@@ -60,16 +60,7 @@ int main()
             break;
     }
             clocker:
-            /* One-time initialization near the beginning of your program */
-            setupterm(NULL, STDOUT_FILENO, NULL);
-
-            /* Enter bold mode */
-            putp(enter_bold_mode);
-
-            printf("I am bold\n");
-
-            /* Turn it off! */
-            putp(exit_attribute_mode);
+            
             while (1)
             {
                 
